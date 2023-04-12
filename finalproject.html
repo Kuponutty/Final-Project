@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Countries of the World</title>
+        <script src="script.js" defer></script>
+    </head>
+<body>
+
+<h2>Countries of the World</h2>
+
+<form id="countryInfoForm">
+    <label for="countrySelection">Please choose a country from the list</label><br>
+    <select id="countrySelection" name="countrySelection" onChange="getCountryInfo()">
+        <option value="">Select a country</option>
+        <option value="Canada">Canada</option>
+        <option value="New Zealand">New Zealand</option>
+    </select><br><br>
+
+    <label for="countryInfo">Country Info:</label><br><br>
+    <img src="https://en.wikipedia.org/wiki/File:Flag_of_${}.svg" alt="${} flag"><br><br>
+    <label for="population">Population</label><br>
+    <input type="text" name="population" id="population"><br><br>
+
+    <label for="areaSelection">Area in:</label><br>
+    <input type="text" name="area">
+    <select id="areaSelection" name="areaSelection" id="areaSelection">
+        <option value="squareKm">km²</option>
+        <option value="squareMi">mi²</option>
+    </select><br><br>
+
+    <label for="populationDensity">Population Density:</label><br>
+
+    <input type="radio" id="sqareKm" name="populationDensity" value="HTML">
+    <label for="html">per km²</label><br>
+    <input type="radio" id="squareMi" name="populationDensity" value="HTML">
+    <label for="html">per mi²</label><br>
+
+    <input type="text" name="populationDensity"><br><br>
+
+    <label for="populationPercent">Percentage of World Population:</label><br>
+    <input type="text" name="populationPercent"><br><br>
+</form>
+
+
+</body>
+</html>
